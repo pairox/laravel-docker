@@ -47,6 +47,13 @@ bash init-ssl.sh
 - поднимет `nginx` на **80** порту,  
 - получит сертификат Let's Encrypt через `certbot`,  
 - перезапустит `nginx` с HTTPS.  
+- Устанавливает зависимости (composer install)
+- Создаёт новый проект Laravel
+- Создаёт .env из .env.example и прописывает туда параметры БД.
+- Генерирует ключ приложения (php artisan key:generate).
+- Сбрасывает кэш конфигурации (php artisan config:clear).
+- Запускает миграции (php artisan migrate --force).
+- Выполняет сиды (php artisan db:seed --force).
 
 ---
 
